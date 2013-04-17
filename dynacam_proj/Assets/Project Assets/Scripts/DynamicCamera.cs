@@ -14,7 +14,7 @@ public class DynamicCamera : MonoBehaviour
 	
 	private Vector3 targetMotionDirection = Vector3.zero;
 	
-	private float targetMotionOffset = 70.0F;
+	private float targetMotionOffset = 10.0F;
 	
 	private Vector3 lastTargetPosition = Vector3.zero;
 	
@@ -35,13 +35,13 @@ public class DynamicCamera : MonoBehaviour
 		transform.position = Vector3.Lerp(
 			transform.position,
 			camPos,
-			2.00F * Time.smoothDeltaTime);
+			6.00F * Time.smoothDeltaTime);
 		
 		LerpLookAt(
 			transform,
 			target.transform,
 			objectivePoint,
-			0.60F * Time.smoothDeltaTime);
+			5.60F * Time.smoothDeltaTime);
 	}
 	
 	Vector3 getCameraPosition ()
