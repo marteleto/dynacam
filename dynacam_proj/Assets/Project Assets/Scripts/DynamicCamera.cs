@@ -14,7 +14,7 @@ public class DynamicCamera : MonoBehaviour
 	
 	private Vector3 targetMotionDirection = Vector3.zero;
 	
-	private float targetMotionOffset = 10.0F;
+	private float targetMotionOffset = 15.0F;
 	
 	private Vector3 lastTargetPosition = Vector3.zero;
 	
